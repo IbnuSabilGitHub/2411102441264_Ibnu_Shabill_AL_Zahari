@@ -1,0 +1,147 @@
+:root {
+    --bs-body-bg: rgb(10, 10, 10);
+    --bs-body-color: white;
+}
+
+body {
+    background-color: var(--bs-body-bg) !important;
+    color: var(--bs-body-color) !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        sans-serif;
+}
+
+.profile-img {
+    background: linear-gradient(45deg, #fbbf24, #ef4444, #a855f7);
+    padding: 2px;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+}
+
+.profile-img img {
+    border-radius: 50%;
+    background-color: rgb(23, 23, 23);
+}
+
+.story-highlight {
+    border: 2px solid #6b7280;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.story-highlight img {
+    border-radius: 50%;
+    background-color: rgb(23, 23, 23);
+}
+
+.btn-custom {
+    background-color: rgb(23, 23, 23);
+    border: none;
+    color: white;
+    font-weight: 500;
+}
+
+.btn-custom:hover {
+    background-color: rgb(75, 85, 99);
+    color: white;
+}
+
+.text-muted-custom {
+    color: rgb(107, 114, 128) !important;
+}
+
+.border-custom {
+    border-color: rgb(31, 41, 55) !important;
+}
+
+.bg-custom {
+    background-color: rgb(10, 10, 10) !important;
+}
+
+.tab-active {
+    border-bottom: 2px solid white !important;
+}
+
+.post-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.post-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.post-stats {
+    opacity: 0;
+    transition: opacity 0.3s;
+    color: white;
+    font-weight: 500;
+}
+
+.post-overlay:hover .post-stats {
+    opacity: 1;
+}
+
+/* Card component styling */
+.card {
+    border-radius: 0 !important;
+}
+
+.card-img {
+    border-radius: 0 !important;
+}
+
+.aspect-ratio-9-16 {
+    aspect-ratio: 9/16;
+}
+
+.mobile-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(10, 10, 10);
+    border-top: 1px solid rgb(31, 41, 55);
+    z-index: 1050;
+}
+
+.footer-icon {
+    color: rgb(107, 114, 128);
+    transition: color 0.3s;
+}
+
+.footer-icon:hover {
+    color: white;
+}
+
+.profile-img-small {
+    background: linear-gradient(45deg, #fbbf24, #ef4444, #a855f7);
+    padding: 1px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+@media (max-width: 767px) {
+    .pb-mobile {
+        padding-bottom: 5rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .mobile-footer {
+        display: none;
+    }
+
+    .profile-img {
+        width: 8rem;
+        height: 8rem;
+    }
+}
