@@ -107,6 +107,7 @@ Praktikum ini memberikan pemahaman dasar tentang penggunaan PHP sebagai bahasa p
 ## Referensi
 
 EKo Siswanto, S. M. (2021). PHP Uncover (Kupas Tuntas Pemprograman PHP). Jln Majapahit No 605 Semarang: YAYASAN PRIMA AGUS TEKNIK.
+
 PHP. (2025). PHP: PHP Manual - Manual. Retrieved from Php.net: https://www.php.net/manual/en/
 
 
