@@ -1,0 +1,4 @@
+# SOAL 2
+Berdasarkan soal no 2 pada pertemuan sebelumnya, tambahkan form input untuk memasukkan jumlah uang. Jangan lupa untuk menambahkan tombol submit dan reset. Apabila tombol submit diklik, maka semua data input akan diproses ke script PHP untuk diolah menghasilkan banyaknya jumlah pecahan.
+
+Ibu ingin mengambil uang tabungan sejumlah Rp. 1.575.250,- yang dimilikinya di sebuah bank. Misalkan pada saat itu uang pecahan yang berlaku adalah Rp. 100.000,-; Rp. 50.000,-; Rp. 20.000,-; Rp. 5.000,-; Rp. 100,- dan Rp. 50. Dengan menggunakan script PHP, tentukan banyaknya masing-masing uang pecahan yang diperoleh ibu tadi!

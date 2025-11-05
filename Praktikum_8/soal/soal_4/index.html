@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendaftaran Mahasiswa Baru - Universitas Muhammadiyah Kalimantan Timur</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body class="flex items-center justify-center min-h-screen bg-gray-900 py-8">
+    <div
+      class="w-full max-w-lg p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700"
+    >
+      <form class="space-y-6" action="soal_4.php" method="get">
+        <h5
+          class="text-xl font-medium text-gray-900 dark:text-white text-center"
+        >
+          <i class="fas fa-graduation-cap mr-2"></i>Pendaftaran Mahasiswa Baru
+        </h5>
+        <p class="text-sm text-gray-600 dark:text-gray-400 text-center">
+          Universitas Muhammadiyah Kalimantan Timur
+        </p>
+
+        <div>
+          <label
+            for="nama_lengkap"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Nama Lengkap</label
+          >
+          <div class="relative w-full">
+            <div
+              class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none text-gray-500 dark:text-gray-400"
+            >
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <input
+              type="text"
+              name="nama_lengkap"
+              id="nama_lengkap"
+              class="block p-2.5 w-full z-20 ps-10 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
+              placeholder="Masukkan nama lengkap"
+              required
+            />
+          </div>
+        </div>
+
+        <div>
+          <label
+            for="tempat_lahir"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Tempat Lahir</label
+          >
+          <div class="relative w-full">
+            <div
+              class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none text-gray-500 dark:text-gray-400"
+            >
+              <i class="fa-solid fa-map-marker-alt"></i>
+            </div>
+            <input
+              type="text"
+              name="tempat_lahir"
+              id="tempat_lahir"
+              class="block p-2.5 w-full z-20 ps-10 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
+              placeholder="Masukkan tempat lahir"
+              required
+            />
+          </div>
+        </div>
+
+        <div>
+          <label
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Tanggal Lahir</label
+          >
+          <div class="flex gap-2">
+            <select
+              name="tanggal"
+              class="flex-1 p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
+              required
+            >
+              <option value="">Tanggal</option>
+            </select>
+
+            <select
+              name="bulan"
+              class="flex-1 p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
+              required
+            >
+              <option value="">Bulan</option>
+              <option value="1">Januari</option>
+              <option value="2">Februari</option>
+              <option value="3">Maret</option>
+              <option value="4">April</option>
+              <option value="5">Mei</option>
+              <option value="6">Juni</option>
+              <option value="7">Juli</option>
+              <option value="8">Agustus</option>
+              <option value="9">September</option>
+              <option value="10">Oktober</option>
+              <option value="11">November</option>
+              <option value="12">Desember</option>
+            </select>
+
+            <select
+              name="tahun"
+              class="flex-1 p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
+              required
+            >
+              <option value="">Tahun</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label
+            for="alamat_rumah"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Alamat Rumah</label
+          >
+          <div class="relative w-full">
+            <div
+              class="absolute top-3 start-0 flex items-start ps-3.5 pointer-events-none text-gray-500 dark:text-gray-400"
+            >
+              <i class="fa-solid fa-home"></i>
+            </div>
+            <textarea
+              name="alamat_rumah"
+              id="alamat_rumah"
+              rows="3"
+              class="block p-2.5 w-full ps-10 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
+              placeholder="Masukkan alamat lengkap"
+              required
+            ></textarea>
+          </div>
+        </div>
+
+        <div>
+          <label
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Jenis Kelamin</label
+          >
+          <div class="flex gap-4">
+            <div class="flex items-center">
+              <input
+                id="pria"
+                type="radio"
+                value="Pria"
+                name="jenis_kelamin"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                required
+              />
+              <label
+                for="pria"
+                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                ><i class="fas fa-mars mr-1"></i>Pria</label
+              >
+            </div>
+            <div class="flex items-center">
+              <input
+                id="wanita"
+                type="radio"
+                value="Wanita"
+                name="jenis_kelamin"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                required
+              />
+              <label
+                for="wanita"
+                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                ><i class="fas fa-venus mr-1"></i>Wanita</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <label
+            for="asal_sekolah"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Asal Sekolah</label
+          >
+          <div class="relative w-full">
+            <div
+              class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none text-gray-500 dark:text-gray-400"
+            >
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <input
+              type="text"
+              name="asal_sekolah"
+              id="asal_sekolah"
+              class="block p-2.5 w-full z-20 ps-10 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
+              placeholder="Masukkan nama sekolah asal"
+              required
+            />
+          </div>
+        </div>
+
+        <div>
+          <label
+            for="nilai_uan"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Nilai UAN</label
+          >
+          <div class="relative w-full">
+            <div
+              class="absolute inset-y-0 start-0 top-0 flex items-center ps-3.5 pointer-events-none text-gray-500 dark:text-gray-400"
+            >
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <input
+              type="number"
+              name="nilai_uan"
+              id="nilai_uan"
+              step="0.01"
+              min="0"
+              max="100"
+              class="block p-2.5 w-full z-20 ps-10 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
+              placeholder="Masukkan nilai UAN (0-100)"
+              required
+            />
+          </div>
+          <p class="mt-1 text-xs text-gray-500 dark:text-gray-400">
+            Nilai antara 0 hingga 100
+          </p>
+        </div>
+
+        <div class="flex flex-row gap-2">
+          <button
+            type="submit"
+            class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            <i class="fas fa-paper-plane mr-2"></i>Daftar
+          </button>
+          <button
+            type="reset"
+            class="w-full text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
+          >
+            <i class="fas fa-undo mr-2"></i>Reset
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      // Generate tanggal options
+      document.addEventListener("DOMContentLoaded", function () {
+        const tanggalSelect = document.querySelector('select[name="tanggal"]');
+        for (let i = 1; i <= 31; i++) {
+          const option = document.createElement("option");
+          option.value = i;
+          option.textContent = i;
+          tanggalSelect.appendChild(option);
+        }
+
+        const tahunSelect = document.querySelector('select[name="tahun"]');
+        for (let i = 2005; i >= 1980; i--) {
+          const option = document.createElement("option");
+          option.value = i;
+          option.textContent = i;
+          tahunSelect.appendChild(option);
+        }
+      });
+    </script>
+  </body>
+</html>
