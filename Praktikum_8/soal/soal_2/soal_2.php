@@ -1,9 +1,10 @@
 <?php
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('Location: index.html');
-    exit();
-}
+include_once '../../../helper/php/global_function.php';
 
+// Cek apakah request method adalah POST. Cegah akses langsung ke halaman ini tanpa submit form.
+if (!isPostRequest()) {
+    redirectTo('index.html');
+}
 // Ambil input dari form
 $jumlahUang = $_POST['jumlah_uang'];
 
