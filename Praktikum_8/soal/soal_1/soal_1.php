@@ -1,7 +1,7 @@
 <?php
 include_once '../../../helper/php/global_function.php';
 
-// Cek apakah request method adalah POST. Cegah akses langsung ke halaman ini tanpa submit form.
+// Cek apakah request method adalah POST. Cegah akses langsung ke halaman ini ta
 if (!isPostRequest()) {
     redirectTo('index.html');
 }
@@ -48,11 +48,7 @@ if (empty($errors)) {
     $persentasePertumbuhan = (($saldoAkhir - $saldoAwal) / $saldoAwal) * 100;
 }
 
-// Format number untuk rp
-function formatRupiah($angka)
-{
-    return 'Rp ' . number_format($angka, 2, ',', '.');
-}
+
 ?>
 <!DOCTYPE html>
 <html lang="id">
